@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-pipe = pickle.load(open('pipe.pkl'))
+pipe = pd.read_pickle('pipe.pkl')
 data = pd.read_pickle('rouute.pkl')
 stationDetails = pd.read_pickle('station.pkl')
 
