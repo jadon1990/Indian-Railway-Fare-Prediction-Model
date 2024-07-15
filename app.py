@@ -3,13 +3,11 @@ import pickle
 import pandas as pd
 import numpy as np
 
-pipe = pickle.load(open('pipe.pkl', 'rb'))
-data = pd.read_pickle('rouute.pkl')
-stationDetails = pd.read_pickle('station.pkl')
+pipe = pickle.load(open('./pipe.pkl', 'rb'))
+data = pd.read_pickle('./rouute.pkl')
+stationDetails = pd.read_pickle('./station.pkl')
 
-data = pd.read_pickle('rouute.pkl')
 stationFrom = data['stationCode'].unique()
-
 st.title('Train ticket Fare Prediction')
 
 col1, col2 =  st.columns([1,2])
