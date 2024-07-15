@@ -6,3 +6,5 @@
 6. hit enter and a window will open in browser or open this in browser http://localhost:8502/
 7. select the Station From and Station To
 8. click on Predict Fare
+9. Check the deployed application @ https://indian-railway-fare-prediction-model-atjj4kxdskrsu3qesqjnca.streamlit.app/
+
