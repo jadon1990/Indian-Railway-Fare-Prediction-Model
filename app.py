@@ -42,7 +42,7 @@ with col2:
 if st.button('Predict Fare'):
 
     input_data = data.loc[(data['stationCode'] == station_from_cd) & (data['stationTo'] == station_To_Cd),['distance', 'journeyTime', 'trainStatus']]
-
     result = pipe.predict(input_data)
-    st.header("Predicted Score is : " + str(int(result[0])))
+    rupeeSymbol = (u'\u20B9')
+    st.header(f"Predicted Score is : {rupeeSymbol}{str(int(result[0]))}")
 
